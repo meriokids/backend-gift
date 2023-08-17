@@ -8,15 +8,15 @@ const envioCorreo = (req=request,resp=response) =>{
         host:'smtp.gmail.com',
         post: 587,
         auth:{
-            user:'mario@85media.mx',
-            pass: 'dtoodyxgvfgnaowd'
+            user:'mktgiftmx@gmail.com',
+            pass: 'ffsotwrtvqljkmya'
         }
     });
 
     const opciones = {
         from: body.correo,
         subject: body.name + '  le ha enviado un correo',
-        to:  'mario@85media.mx',
+        to:  'contacto@mktgift.com.mx',
         text: 
           'Nombre: ' + body.name + `\n` 
         + 'Correo: ' + body.correo + `\n` 
